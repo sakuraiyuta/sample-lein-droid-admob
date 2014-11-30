@@ -47,6 +47,7 @@
             ;; If previous option didn't work, uncomment this as well.
             ;; :force-dex-optimize true
 
+            ;; TODO: replace paths
             :project-dependencies ["/opt/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib"]
             :external-classes-paths ["/opt/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar"]
 
