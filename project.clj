@@ -11,8 +11,8 @@
   :javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
   :plugins [[lein-droid "0.3.0-SNAPSHOT"]]
 
-  :dependencies [[org.clojure-android/clojure "1.6.0-RC1" :use-resources true]
-                 [neko/neko "3.1.0-beta1"]]
+  :dependencies [[org.clojure-android/clojure "1.7.0-alpha3" :use-resources true]
+                 [neko/neko "3.1.0-SNAPSHOT"]]
   :profiles {:default [:dev]
 
              :dev
@@ -46,6 +46,9 @@
 
             ;; If previous option didn't work, uncomment this as well.
             ;; :force-dex-optimize true
+
+            :project-dependencies ["/opt/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib"]
+            :external-classes-paths ["/opt/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar"]
 
             :target-version "15"
             :aot-exclude-ns ["clojure.parallel" "clojure.core.reducers"
