@@ -15,14 +15,14 @@
   :profiles {:default [:dev]
 
              :dev
-             [;; :android-common :android-user
+             [:android-common :android-user
               {:dependencies [[org.clojure/tools.nrepl "0.2.3"]]
                :target-path "target/debug"
                :android {:aot :all-with-unused
                          :rename-manifest-package "sample.lein.droid.admob.debug"
                          :manifest-options {:app-name "sample-lein-droid-admob - debug"}}}]
              :release
-             [;; :android-common
+             [:android-common
               {:target-path "target/release"
                :android
                { ;; Specify the path to your private keystore
