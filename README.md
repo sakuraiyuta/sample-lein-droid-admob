@@ -3,6 +3,7 @@
 ## How to build
 
 - check out this repo.
+- copy `./google_play.project.clj` to your GooglePlayService lib's directory. ex) `/opt/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/`
 - fix `ads:adUnitId` attribute in `res/layout/admob.xml`
 - `lein do clean, doall`
 
