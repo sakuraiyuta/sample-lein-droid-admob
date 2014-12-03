@@ -8,10 +8,9 @@
   :source-paths ["src/clojure" "src"]
   :java-source-paths ["src/java" "gen"]
   :javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
+  :java-only true
 
-  :dependencies [[org.clojure-android/clojure "1.6.0-RC1"]]
-
-  :profiles {:release {:build-type :release}}
+  :profiles {:default [:release]
+             :release [:android-common]}
   :android {:target-version "9"
             :library true})
-
